@@ -7,7 +7,13 @@ const List = () => {
   const [showAll, setShowAll] = useState(true);
 
   return (
-    <div className="List-container">
+    <div className="list-container">
+      {todoList.length > 0
+        ? todoList.map((item) => {
+            return <TodoItem key={item.id} todoItem={item} />;
+          })
+        : null}
+
       <div className="list-footer">
         <div className="footer-1"> 5 items left</div>
         <div className="footer-2">
