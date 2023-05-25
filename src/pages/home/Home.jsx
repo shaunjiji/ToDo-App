@@ -4,6 +4,19 @@ import { ReactComponent as Moon } from "../../assets/icon-moon.svg";
 import { ReactComponent as Sun } from "../../assets/icon-sun.svg";
 
 const Home = () => {
+  const handleIcon = () => {
+    let moon = document.querySelector("#moon");
+    let sun = document.querySelector("#ssun");
+
+    let lightBg = document.querySelector("#light-bg");
+    let darkBg = document.querySelector("#dark-bg");
+
+    let theme = document.querySelector(".main-container");
+
+    moon.classList.toggle("hidden");
+    sun.classList.toggle("hidden");
+    theme.classList.toggle("dark");
+  };
   return (
     <section className="home-page-container">
       <img
@@ -22,7 +35,10 @@ const Home = () => {
       <div className="todo-container">
         <div className="todo-wrapper">
           <h1 className="title">todo</h1>
-          <div className="theme-icon"></div>
+          <div className="theme-icon">
+            <Moon id="moon" onClick={() => handleIcon()} />
+            <Sun id="sun" className="hidden" onClick={() => handleIcon()} />
+          </div>
         </div>
       </div>
     </section>
