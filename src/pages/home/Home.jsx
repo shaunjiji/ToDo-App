@@ -3,6 +3,7 @@ import "./home.css";
 import { ReactComponent as Moon } from "../../assets/icon-moon.svg";
 import { ReactComponent as Sun } from "../../assets/icon-sun.svg";
 import Input from "../../components/Input/Input";
+import List from "../../components/List/List";
 
 const Home = () => {
   const handleIcon = () => {
@@ -44,6 +45,7 @@ const Home = () => {
           </div>
         </div>
         <Input />
+        <List />
       </div>
     </section>
   );
