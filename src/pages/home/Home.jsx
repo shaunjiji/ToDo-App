@@ -6,7 +6,7 @@ import { ReactComponent as Sun } from "../../assets/icon-sun.svg";
 const Home = () => {
   const handleIcon = () => {
     let moon = document.querySelector("#moon");
-    let sun = document.querySelector("#ssun");
+    let sun = document.querySelector("#sun");
 
     let lightBg = document.querySelector("#light-bg");
     let darkBg = document.querySelector("#dark-bg");
@@ -16,6 +16,8 @@ const Home = () => {
     moon.classList.toggle("hidden");
     sun.classList.toggle("hidden");
     theme.classList.toggle("dark");
+    lightBg.classList.toggle("hidden");
+    darkBg.classList.toggle("hidden");
   };
   return (
     <section className="home-page-container">
