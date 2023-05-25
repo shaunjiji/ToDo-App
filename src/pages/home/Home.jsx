@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import { ReactComponent as Moon } from "../../assets/icon-moon.svg";
 import { ReactComponent as Sun } from "../../assets/icon-sun.svg";
+import Input from "../../components/Input/Input";
 
 const Home = () => {
   const handleIcon = () => {
@@ -42,6 +43,7 @@ const Home = () => {
             <Sun id="sun" className="hidden" onClick={() => handleIcon()} />
           </div>
         </div>
+        <Input />
       </div>
     </section>
   );
