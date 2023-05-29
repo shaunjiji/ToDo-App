@@ -8,6 +8,7 @@ const TodoItem = () => {
   return (
     <div className="todo-item-container">
       <div className="todo-items"></div>
+      <p>Todo</p>
     </div>
   );
 };
